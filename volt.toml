@@ -1,10 +1,10 @@
-name = "<plugin-name>"
-version = "0.0.0"
-author = "<your name>"
-display-name = "<plugin-display-name>"
-description = "<plugin-description>"
-wasm = "bin/<plugin-name>.wasm"
+name = "lapce-nix"
+version = "0.0.1"
+author = "ghishadow"
+display-name = "Nix"
+description = "Nix lsp powered by nil"
+wasm = "bin/lapce-nix.wasm"
 
 [activation]
-language = []
-workspace-contains = []
+language = ["nix"]
+workspace-contains = ["*/flake.nix"]
